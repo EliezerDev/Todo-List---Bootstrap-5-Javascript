@@ -1,0 +1,46 @@
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  filter: brightness(80%);
+}
+
+.form-switch {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) scale(1.5);
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+/* dark-mode style */
+body,
+.card,
+input,
+.btn {
+  transition: all 1s;
+}
+
+body.darkMode {
+  background-color: #000000;
+}
+
+.card.darkMode {
+  background-color: #52057b !important;
+  color: #892cdc !important;
+  border: 1px solid #bc6ff1;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #52057b;
+  border: 1px solid #bc6ff1;
+}
+
+.btn.darkMode {
+  background-color: #892cdc;
+  border: 1px solid #bc6ff1;
+}
